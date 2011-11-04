@@ -10,8 +10,16 @@ console.log("background script called");
 
 wikiResults.each(function(index) {
     var title = $(this).attr("href").replace("http://en.wikipedia.org/wiki/", "");
-    console.log('Processing...');
+
     console.log(title);
+
+    var url = "http://en.wikipedia.org/w/api.php?action=query&titles=" + title +"&prop=langlinks&lllimit=500&format=xml";
+
+    /* Insert the api request and collback calling code here */
+    $.get(url, dataType= 'xml', function(data){
+        console.log('get function');
+    });
+
 
     getLocalTitle( title , function(data){
 
@@ -23,9 +31,12 @@ wikiResults.each(function(index) {
 
 function getLocalTitle( title , callback ){
     var url = "http://en.wikipedia.org/w/api.php?action=query&titles=" + title +"&prop=langlinks&lllimit=500&format=xml";
-    console.log('getting url: ' + url);
+    console.log('URL:' + url);
 
     /* Insert the api request and collback calling code here */
+    jQuery.ajax(url, dataType= 'xml', function(data){
+        console.log('get function');
+    });
 
 }
 
