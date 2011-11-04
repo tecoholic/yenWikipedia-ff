@@ -6,14 +6,16 @@ wikiResults.each(function(index) {
     self.postMessage({ 'index' : index, 'title' : title});
 });
 
-self.onMessage = function(data){
-    $(data.response).find("ll[lang='" + lang + "']").each(function() {
+self.on('message', function(data){
+    console.log(data.index);
+    var xmldoc = $.parseXML(data.response);
+    $(xmldoc).find("ll[lang='" + lang + "']").each(function() {
             appendLink(wikiResults[data.index],$(this).text(),lang);
     });
-}
+});
 
 function appendLink(element, title, lang){
-    $(element).after("<a class='extra-wikilink' href='http://" + lang + ".wikipedia.org/wiki/" + data + "'>" + data + "</a>");
-    console.log('Injecting..'+data);
+    $(element).after("<a class='extra-wikilink' href='http://" + lang + ".wikipedia.org/wiki/" + title + "'>" + title + "</a>");
+    console.log('Injecting..' + title);
 }
 
