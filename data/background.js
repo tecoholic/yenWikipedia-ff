@@ -15,7 +15,7 @@ self.on('message', function(data){
 });
 
 function appendLink(element, title, lang){
-    $(element).after("<a class='extra-wikilink' href='http://" + lang + ".wikipedia.org/wiki/" + title + "'>" + title + "</a>");
+    $(element).after("&nbsp;&nbsp;<a class='extra-wikilink' href='http://" + lang + ".wikipedia.org/wiki/" + title + "'>" + title + "</a>");
     console.log('Injecting..' + title);
 }
 
