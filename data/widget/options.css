@@ -1,0 +1,72 @@
+* {
+    font-size: 11pt;
+    font-family: "Helvetica", "Trebuchet MS", "Sans Serif";
+}
+
+a {
+    text-decoration: None;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    padding-top: 5px;
+    display: None;
+}
+
+#choiceSet  label {
+    width: 100px;
+    font: inherit;
+}
+
+#notice {
+    display: none;
+    width:100%;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+#secondaryIndicChoices {
+    margin-top:5px;
+}
+
+label {
+    margin-top:5px;
+}
+
+#otherChoices {
+    margin-top:50px;
+}
+
+#showOther {
+    padding: 5px;
+    width: 150px;
+}
+
+#otherEntry {
+    display: None;
+}
+
+#footer {
+    margin-top: 100px;
+    color: DarkGrey;
+    text-align: Center;
+}
+#footer p {
+    margin: 0px;
+    padding-bottom:5px;
+}
+
+#footer a {
+    color: Grey;
+}
+
+#note {
+	color: DarkGrey;
+}
+
+#desc {
+    margin: 20px 0px;
+    color:Grey;
+}
