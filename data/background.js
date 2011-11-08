@@ -1,5 +1,4 @@
 var wikiResults = $(".l[href*='en.wikipedia.org/wiki/']");
-var lang = 'ta';
 
 wikiResults.each(function(index) {
     var title = $(this).attr("href").replace("http://en.wikipedia.org/wiki/", "");
@@ -9,8 +8,8 @@ wikiResults.each(function(index) {
 self.on('message', function(data){
     console.log(data.index);
     var xmldoc = $.parseXML(data.response);
-    $(xmldoc).find("ll[lang='" + lang + "']").each(function() {
-            appendLink(wikiResults[data.index],$(this).text(),lang);
+    $(xmldoc).find("ll[lang='" + data.lang + "']").each(function() {
+            appendLink(wikiResults[data.index],$(this).text(),data.lang);
     });
 });
 
