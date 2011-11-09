@@ -15,8 +15,8 @@ a {
     display: None;
 }
 
-#choiceSet  label {
-    width: 100px;
+.choiceSet  label {
+    width: 50%;
     font: inherit;
 }
 
@@ -36,7 +36,7 @@ label {
 }
 
 #otherChoices {
-    margin-top:50px;
+    margin-top:10px;
 }
 
 #showOther {
@@ -49,24 +49,22 @@ label {
 }
 
 #footer {
-    margin-top: 100px;
+    margin-top: 10px;
     color: DarkGrey;
     text-align: Center;
 }
 #footer p {
     margin: 0px;
     padding-bottom:5px;
+    font-size: 0.9em;
 }
 
 #footer a {
     color: Grey;
+    font-size: 0.9em;
 }
 
 #note {
 	color: DarkGrey;
 }
 
-#desc {
-    margin: 20px 0px;
-    color:Grey;
-}
