@@ -2,7 +2,7 @@
     "name": "yenwikipedia-ff", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
     "author": "Arunmozhi <aruntheguy@gmail.com>", 
-    "version": "0.2", 
+    "version": "0.2.1", 
     "fullName": "yenWikipedia", 
     "id": "jid1-BMBJMFbsTALOmA", 
     "description": "Provides links to other language Wikipedias in Google search results."
