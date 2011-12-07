@@ -1,9 +1,10 @@
 # yenWikipedia
 
-yenWikipedia is a browser addon that fetches the other language page links for Wikipedia articles in Google Search result.
+yenWikipedia is a browser addon that fetches the other language Wikipedia links for English Wikipedia articles in Google Search results.
+The addon can be downloaded from the Firefox Addon Gallery [here](https://addons.mozilla.org/en-US/firefox/addon/yenwikipedia/)
 
 ## yenWikipedia-ff (This repo)
 
-This repo will contain the code rewritten from scratch, using the new Firefox Addoon SDK, of the firefox addon.
+This repo contains the code adapted from its parent addon yenWikipedia for Chrome by yuvipanda, using the new Firefox Addoon SDK, of the firefox addon. The previous native firefox addon code can be browsed at [https://github.com/tecoholic/yenwikipedia/](https://github.com/tecoholic/yenwikipedia/).
 
-*P.S* More documentation will be put up only when work has progressed considereably, until then browse through the code. 
+The code itself is self explanatory for anyone working with the Firefox addon SDK. Browse through the _main.js_ file in _lib_ and the _background.js_ in _data_ directories.
